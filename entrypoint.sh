@@ -27,7 +27,7 @@ else
     echo "GreetPause:${SUBNET}                  0" >> /etc/mail/access
     echo "ClientRate:${SUBNET}                  0" >> /etc/mail/access
     echo "ClientConn:${SUBNET}                  0" >> /etc/mail/access
-    echo "TryTLS:naver.com                     NO" >> /etc/mail/access
+    echo "Try_TLS:naver.com                     NO" >> /etc/mail/access
 
     # 3. whitelist if defined -> does not work. It will accept, anyway, all mails From this container's domain
     # if [ -n "${WHITELIST_FROM}" ]; then
